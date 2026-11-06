@@ -1,0 +1,12 @@
+{
+  "name": "elysilana",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ELYSILANA live Solana market board",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs"
+  },
+  "license": "MIT"
+}

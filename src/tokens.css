@@ -1,0 +1,22 @@
+/* Single home for every colour literal in the project.
+   Provenance: k-means (k=4, 25 iterations, seed 1) over every pixel of the asset,
+   each centre then snapped to the nearest real pixel; coordinates are x,y in the source file.
+   --color-bg      brand reference banner (reference/SAMPUL ELYSILANA), cluster 88.5%, pixel (38,0)
+   --color-panel   brand/LOGO ELYSILANA PNG.png (RGB, colourtype 2), cluster 89.4%, pixel (0,0)
+   --color-mint    brand/LOGO ELYSILANA PNG...png (RGBA, colourtype 6), cluster 10.5%, pixel (1150,461)
+   --color-ink     reference banner headline cluster 6.5%, pixel (568,139)
+   --color-muted   reference banner sub line, pixel (396,355)
+   --color-line    brand/LOGO ELYSILANA JPG, anti-alias edge cluster, pixel (1238,463)
+   --color-soft    brand/LOGO ELYSILANA JPG, edge cluster, pixel (1122,588)
+   --color-deep    reference banner dark cluster 4.0%, pixel (1308,5) */
+:root {
+  --color-bg: #101116;
+  --color-deep: #0d0e13;
+  --color-panel: #191e27;
+  --color-mint: #b3c5fb;
+  --color-ink: #d4dff5;
+  --color-muted: #7a808e;
+  --color-soft: #8895b7;
+  --color-line: #4d5770;
+  color-scheme: dark;
+}

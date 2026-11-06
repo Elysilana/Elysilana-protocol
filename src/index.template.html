@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-ca="{{CA_STATE}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="{{THEME}}">
+<title>ELYSILANA</title>
+<meta name="description" content="A calm live ledger for Solana, with the ELYSILANA token pinned on top the moment its contract is announced.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.dataset.motion = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'off' : 'on';</script>
+<script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+<a class="skip" href="#board">Skip to the ledger</a>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="ELYSILANA home">ELYSILANA</a>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#board" aria-current="true">Ledger</a>
+    <a href="#pillars">Pillars</a>
+    <a href="#register">Register</a>
+  </nav>
+  <div class="socials" id="socials">{{SOCIALS}}</div>
+</header>
+
+<div class="ca-bar" id="top">
+  <div class="ca-inner" id="ca">{{CA_SLOT}}</div>
+  <span class="sr-only" id="toast" role="status" aria-live="polite"></span>
+</div>
+
+<div class="ticker is-skel" aria-label="Live movers">
+  <div class="ticker-track" id="ticker-track"><div class="tick-set"><span class="tick skel-tick"></span><span class="tick skel-tick"></span><span class="tick skel-tick"></span><span class="tick skel-tick"></span><span class="tick skel-tick"></span><span class="tick skel-tick"></span></div></div>
+</div>
+
+<main>
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob b1" data-depth="0.5"></span>
+      <span class="blob b2" data-depth="0.9"></span>
+      <span class="grid-layer" data-depth="0.25"></span>
+      <span class="ring r1" data-depth="1.3"></span>
+      <span class="ring r2" data-depth="1.8"></span>
+    </div>
+    <div class="hero-copy" data-reveal>
+      <div class="kicker"><span class="status" id="status" data-state="sync"><i class="live-dot"></i><span class="status-text">Syncing</span></span><span>ELYSILANA / SOLANA</span></div>
+      <h1 id="hero-title">A quiet signal inside a loud market.</h1>
+      <p>Elysilana keeps the busiest Solana tokens in one calm ledger that refreshes itself, and gives its own token the top seat once the contract is announced.</p>
+      <div class="actions">
+        <a class="btn primary" href="#board">View the ledger</a>
+        <a class="btn ghost" href="#top">Contract slot</a>
+      </div>
+    </div>
+
+    <section class="board panel" id="board" aria-labelledby="board-title" data-reveal data-stagger="2">
+      <div class="board-head">
+        <h2 id="board-title">Live ledger</h2>
+        <span class="counter"><b id="board-count">0</b> tokens tracked</span>
+      </div>
+      <div class="toolbar">
+        <span class="tool-title">Rank by</span>
+        <div class="segmented" role="group" aria-label="Rank by">
+          <button type="button" data-sort="volume" aria-pressed="true">Volume</button>
+          <button type="button" data-sort="change" aria-pressed="false">Change</button>
+          <button type="button" data-sort="liquidity" aria-pressed="false">Liquidity</button>
+        </div>
+      </div>
+      <div class="cols" aria-hidden="true"><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span><span></span></div>
+      <ul class="rows" id="rows">{{SKELETON}}</ul>
+      <p class="note" id="board-note" role="status" hidden></p>
+    </section>
+  </section>
+
+  <section class="stats" aria-label="Ledger totals">
+    <article class="stat panel is-skel" id="stat-count" data-spot data-reveal><span class="stat-k">Tokens tracked</span><span class="stat-v"><span class="num" data-fmt="count" data-v="">—</span></span><span class="stat-sub">in the ledger now</span></article>
+    <article class="stat panel is-skel" id="stat-volume" data-spot data-reveal data-stagger="1"><span class="stat-k">Ledger volume</span><span class="stat-v"><span class="num" data-fmt="compact" data-v="">—</span></span><span class="stat-sub">over 24 hours</span></article>
+    <article class="stat panel is-skel" id="stat-liq" data-spot data-reveal data-stagger="2"><span class="stat-k">Ledger liquidity</span><span class="stat-v"><span class="num" data-fmt="compact" data-v="">—</span></span><span class="stat-sub">pooled depth</span></article>
+    <article class="stat panel is-skel" id="stat-top" data-spot data-reveal data-stagger="3"><span class="stat-k">Strongest move</span><span class="stat-v"><span class="num" data-fmt="pct" data-v="">—</span></span><span class="stat-sub"></span></article>
+  </section>
+
+  <section class="pillars" id="pillars" aria-label="Pillars">
+    <article class="pillar panel" data-spot data-reveal><span class="pillar-no">01</span><h2>Always-on ledger</h2><p>Volume-ranked Solana tokens flow in from public feeds each minute, and the screen rests whenever the tab is out of sight.</p><a href="#board">Read the ledger <span aria-hidden="true">↗</span></a></article>
+    <article class="pillar panel" data-spot data-reveal data-stagger="1"><span class="pillar-no">02</span><h2>Nothing guessed</h2><p>Every address and social slot stays dark until it is verified. A dark slot says pending and links nowhere.</p><a href="#register">Read the register <span aria-hidden="true">↗</span></a></article>
+    <article class="pillar panel" data-spot data-reveal data-stagger="2"><span class="pillar-no">03</span><h2>A seat held free</h2><p>Row one is reserved. When the contract lands, our token claims it with its own price, volume and depth.</p><a href="#top">Watch the slot <span aria-hidden="true">↗</span></a></article>
+  </section>
+
+  <section class="register panel" id="register" aria-labelledby="reg-title" data-reveal>
+    <div class="board-head"><h2 id="reg-title">Register</h2><span class="counter">One record per fact</span></div>
+    <ul class="reg" id="register-list">{{REGISTER}}</ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>ELYSILANA</span><span>elysilana.fun</span><span>Solana</span>
+</footer>
+</body>
+</html>

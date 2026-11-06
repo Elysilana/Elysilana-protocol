@@ -1,0 +1,40 @@
+A HYPE powered launchpad on Kinetiq’s Elysium. Create a token, choose its first trading pair, or fund your wallet from Solana.
+Bring Solana. Launch on Elysium.
+Browse launches from Elysium Pad, inspect token artwork and addresses, and get a quote before you trade.
+Browser EVM wallet
+Choose a PNG, JPEG, or WebP image.
+Choose an image up to 8 MB.
+Confirmed launches will appear here.
+Create a token
+Create token
+Create token 
+Elysium Explorer
+Elysium Mainnet
+Elysium Pad
+Elysium Pad features
+Explore and trade
+Explore markets
+Explore markets 
+Fund from Solana
+HYPE
+Launch board
+Launch the next success
+Loading confirmed launches…
+Loading live swap…
+Local development
+Market listings are temporarily unavailable.
+Name your token, adjust its artwork, and open a market with your chosen pair from your wallet.
+Open swap
+RECENT LAUNCHES
+Swap SOL or USDC for HYPE on HyperEVM, then approve the deposit into Elysium from the same page.
+Swap provider could not load.
+Swap widget could not initialize.
+The embedded swap could not load. Reload this page to retry.
+This crop has fewer than 64 pixels across. Zoom out, try Fit, or choose a larger image.
+This image could not be opened.
+This image could not fit as a token icon. Try a simpler image or an HTTPS URL.
+This image is too detailed to save clearly on-chain. Use a simpler image or an HTTPS image URL.
+Your browser could not prepare the image.
+deBridge Solana to HyperEVM swap
+noopener noreferrer
+struct ElysiumPad.Market
